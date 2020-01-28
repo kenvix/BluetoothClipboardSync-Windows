@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using Kenvix.ClipboardSync.Feature.Clipboard;
+using Kenvix.ClipboardSync.UI;
 
 namespace Kenvix.ClipboardSync
 {
@@ -15,7 +18,9 @@ namespace Kenvix.ClipboardSync
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var x = new WindowsClipboardMonitor(new PrinterClipboardHandler());
+            x.StartMonitor();
+            Application.Run(new HostForm());
         }
     }
 }

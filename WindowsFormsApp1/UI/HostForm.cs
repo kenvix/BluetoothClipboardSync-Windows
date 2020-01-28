@@ -15,5 +15,7 @@ namespace Kenvix.ClipboardSync.UI
         {
             InitializeComponent();
         }
+
+        
     }
 }
