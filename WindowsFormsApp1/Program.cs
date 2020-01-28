@@ -20,7 +20,7 @@ namespace Kenvix.ClipboardSync
             Application.SetCompatibleTextRenderingDefault(false);
             var x = new WindowsClipboardMonitor(new PrinterClipboardHandler());
             x.StartMonitor();
-            Application.Run(new HostForm());
+            Application.Run(new SettingsForm());
         }
     }
 }

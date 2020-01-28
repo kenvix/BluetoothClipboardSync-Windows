@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Kenvix.ClipboardSync.Preferences" GeneratedClassName="MainPreferences">
+  <Profiles />
+  <Settings>
+    <Setting Name="DeviceAddress" Provider="Kenvix.ClipboardSync.Preferences.AppConfigProvider" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DeviceName" Provider="Kenvix.ClipboardSync.Preferences.AppConfigProvider" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MinGzipCompressSize" Provider="Kenvix.ClipboardSync.Preferences.AppConfigProvider" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">256</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

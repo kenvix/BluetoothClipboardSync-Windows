@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Kenvix.ClipboardSync.Feature.Preferences;
+using Kenvix.ClipboardSync.Preferences;
 using Kenvix.ClipboardSync.Utils;
 
 namespace Kenvix.ClipboardSync.Feature.Bluetooth
@@ -34,7 +34,7 @@ namespace Kenvix.ClipboardSync.Feature.Bluetooth
                 var isCompressed = (options & RfcommFrame.OptionCompressed) > 0;
                 byte[] outputData;
 
-                if (isCompressed || data.Length > MainPreferences.minGzipCompressSize)
+                if (isCompressed || data.Length > MainPreferences.Default.MinGzipCompressSize)
                 {
                     options = (byte) (options | RfcommFrame.OptionCompressed);
                     isCompressed = true;
